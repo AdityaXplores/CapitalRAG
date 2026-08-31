@@ -59,6 +59,7 @@ It combines two kinds of knowledge in one vector store:
 | `rag.py`    | Full RAG: retrieve → build cited context → answer with the selected LLM. |
 | `llm.py`    | Provider-agnostic `complete()` for DeepSeek / OpenAI / Claude. |
 | `ask.py`    | Interactive command-line Q&A. |
+| `app.py`    | **Streamlit web UI** — chat, search preview, document upload, chat history. |
 | `test_a.py` | Non-interactive smoke test (includes the must-refuse case). |
 | `review/compare_search_vs_rag.py` | Side-by-side demo: **retrieval-only** vs **retrieval + LLM** on the same question. |
 | `data/`     | `metrics.yaml` (governed metrics) + `docs/*.pdf` (source documents). |
@@ -95,8 +96,12 @@ python query.py "tracking error" "how to calculate sharpe ratio"   # multiple qu
 # Full RAG — interactive Q&A
 python ask.py
 
+# Web UI (Streamlit) — recommended for best UX
+streamlit run app.py
+
 # One-off from your own code
 python -c "from rag import answer; print(answer('what was the funded status, and as of when?'))"
+
 
 # Smoke test
 python test_a.py
