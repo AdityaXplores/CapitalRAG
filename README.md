@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # RAG Toy — Investment Knowledge Base
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white&style=flat-square)
