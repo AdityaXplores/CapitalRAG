@@ -162,7 +162,7 @@ The model then generates an answer using only the provided context.
 ## 📁 Project Structure
 
 ```text
-rag-investment-kb/
+capitalrag/
 │
 ├── 📄 ingest.py
 │   └── Builds the vector database from metrics and PDF documents
@@ -212,7 +212,7 @@ rag-investment-kb/
 
 ```bash
 git clone <your-repo-url>
-cd rag-investment-kb
+cd capitalrag
 ```
 
 ### 2. Create a Virtual Environment
